@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">My Recipes</div>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="scrollToRecipe()">Recipes</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#" onclick="scrollToContact()">Contact</a></li>
+        </ul>
+    </div>
+    </header>
+    <div class="hero">
+        <div class="content">
+            <h1>5 Popular Filipino<br> Dish Recipes</h1>
+            <div class="button">Get Started >></div>
+        </div>
+    </div>
+    <div id="recipe" class="recipe">
+        <h2>Featured Recipes</h2>
+        <div class="box">
+            <div class="card">
+                <img src="d1.jpg" alt="">
+                <div class="content">
+                    <h3>Filipino Pork Menudo</h3>
+                    <P>Quick and Easy Menudo recipe that your family will surely love. Try our recipe now!</P>
+                    <button onclick = "window.location.href='porkmenudo.html';">View Recipe</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="d2.jpg" alt="">
+                <div class="content">
+                    <h3>Killer Pork Sinigang</h3>
+                    <P>Sinigang is a sour soup native to the Philippines. This recipe uses pork as the main ingredient.</P>
+                    <button onclick = "window.location.href='porksinigang.html';">View Recipe</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="d3.jpg" alt="">
+                <div class="content">
+                    <h3>Pork Adobo</h3>
+                    <P>Pork Adobo is pork cooked in soy sauce, vinegar, and garlic.It is considered as the Philippine's national dish because of its popularity.</P>
+                    <button onclick = "window.location.href='porkadobo.html';">View Recipe</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="d4.jpg" alt="">
+                <div class="content">
+                    <h3>Fried Chicken with Mayo Garlic Glaze</h3>
+                    <P> Make the Mayo Garlic glaze by melting butter on a clean pan. Add garlic. Cook until it starts to brown.</P>
+                    <button onclick = "window.location.href='friedchiken.html';">View Recipe</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="d5.jpg" alt="">
+                <div class="content">
+                    <h3>Bistek Tagalog (Filipino Beef Steak)</h3>
+                    <P>Bistek Tagalog is made of thinly sliced sirloin braised in a mixture of citrus, soy sauce, onions, and garlic. This Filipino beef steak is hearty, tasty, and perfect with steamed rice.</P>
+                    <button onclick = "window.location.href='bistek.html';">View Recipe</button>
+                </div>
+        </div>
+    </div>
+    <script>
+        function scrollToRecipe() {
+            document.querySelector('#recipe').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+<footer>
+    <h5>CopyRight © 2024 By DEB </h5>
+</footer>
+</body>
+</html>
